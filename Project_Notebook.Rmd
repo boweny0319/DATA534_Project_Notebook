@@ -1,0 +1,32 @@
+---
+title: "Project_Notebook"
+author: "Bowen Yang"
+date: "2/12/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Project Notebook - Bowen Yang
+
+## 2022-02-12
+
+1. Analyzing requirement documents.
+
+2. Group meeting (divide project to sub-tasks).
+
+3. Create repo with teamates during the meeting.
+
+
+
+
+
+
+
+
+
+
+
