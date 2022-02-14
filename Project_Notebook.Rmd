@@ -14,19 +14,68 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## 2022-02-12
 
-1. Analyzing requirement documents.
+1. Analyze requirement documents.
 
 2. Group meeting (divide project to sub-tasks).
 
 3. Create repo with teamates during the meeting.
 
+## 2022-02-13
 
+1. Read GitHub Activity API Document
 
+2. Test APIs using Postman (All this API are tested for public information, results are stored in Postman) 
 
+  + 2.1 List public events
+      
+      * Link: https://api.github.com/events
+  
+      * The "id", "type", "actor", "repo", "created_at" information can be formed as a datafream. We can use it to make some analysis like the number of activity for each type in a interval (to a datetime or last n records).
+      
+  + 2.2 List public events for a network of repositories
+  
+      * Link: https://api.github.com/networks/{owner}/{repo}/events
+  
+      * Example: https://api.github.com/networks/AndrewNg1891/DATA534_API_Project_Group9/events
 
+      * Get information from certain network of repositories
+      
+      * The link explaned the meaning of network of repositories. (https://docs.github.com/en/repositories/viewing-activity-and-data-for-your-repository/understanding-connections-between-repositories)
 
+  + 2.3 List public organization events
+      
+      * Link: https://api.github.com/orgs/{org}/events
+      
+      * Example: https://api.github.com/orgs/ubco-mds-2021/events
+      
+      * Similar information as above by only for certain organization.
+      
+  + 2.4 List repository events
+      
+      * Link: https://api.github.com/repos/{owner}/{repo}/events
+      
+      * Example: https://api.github.com/repos/AndrewNg1891/DATA534_API_Project_Group9/events
+      
+  + 2.5 List stargazers
+  
+      * Link: https://api.github.com/repos/{owner}/{repo}/stargazers
+      
+      * Example: https://api.github.com/repos/WestHealth/pyvis/stargazers
+      
+  + 2.6 List repositories starred by a user
+  
+      * Link: https://api.github.com/users/{username}/starred
+      
+      * Example: https://api.github.com/users/boweny0319/starred
+      
+  + 2.7 List watchers
 
+      * Link: https://api.github.com/repos/{owner}/{repo}/subscribers
+      
+      * Example: https://api.github.com/repos/AndrewNg1891/DATA534_API_Project_Group9/subscribers
+      
+  + 2.8 List repositories watched by a user
 
-
-
-
+      * Link: https://api.github.com/users/{username}/subscriptions
+      
+      * Example: https://api.github.com/users/boweny0319/subscriptions

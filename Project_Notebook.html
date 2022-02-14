@@ -370,10 +370,62 @@ pre code {
 <div id="section" class="section level2">
 <h2>2022-02-12</h2>
 <ol style="list-style-type: decimal">
-<li><p>Analyzing requirement documents.</p></li>
+<li><p>Analyze requirement documents.</p></li>
 <li><p>Group meeting (divide project to sub-tasks).</p></li>
 <li><p>Create repo with teamates during the meeting.</p></li>
 </ol>
+</div>
+<div id="section-1" class="section level2">
+<h2>2022-02-13</h2>
+<ol style="list-style-type: decimal">
+<li><p>Read GitHub Activity API Document</p></li>
+<li><p>Test APIs using Postman (All this API are tested for public information, results are stored in Postman)</p></li>
+</ol>
+<ul>
+<li><p>2.1 List public events</p>
+<ul>
+<li><p>Link: <a href="https://api.github.com/events" class="uri">https://api.github.com/events</a></p></li>
+<li><p>The “id”, “type”, “actor”, “repo”, “created_at” information can be formed as a datafream. We can use it to make some analysis like the number of activity for each type in a interval (to a datetime or last n records).</p></li>
+</ul></li>
+<li><p>2.2 List public events for a network of repositories</p>
+<ul>
+<li><p>Link: <a href="https://api.github.com/networks/%7Bowner%7D/%7Brepo%7D/events" class="uri">https://api.github.com/networks/{owner}/{repo}/events</a></p></li>
+<li><p>Example: <a href="https://api.github.com/networks/AndrewNg1891/DATA534_API_Project_Group9/events" class="uri">https://api.github.com/networks/AndrewNg1891/DATA534_API_Project_Group9/events</a></p></li>
+<li><p>Get information from certain network of repositories</p></li>
+<li><p>The link explaned the meaning of network of repositories. (<a href="https://docs.github.com/en/repositories/viewing-activity-and-data-for-your-repository/understanding-connections-between-repositories" class="uri">https://docs.github.com/en/repositories/viewing-activity-and-data-for-your-repository/understanding-connections-between-repositories</a>)</p></li>
+</ul></li>
+<li><p>2.3 List public organization events</p>
+<ul>
+<li><p>Link: <a href="https://api.github.com/orgs/%7Borg%7D/events" class="uri">https://api.github.com/orgs/{org}/events</a></p></li>
+<li><p>Example: <a href="https://api.github.com/orgs/ubco-mds-2021/events" class="uri">https://api.github.com/orgs/ubco-mds-2021/events</a></p></li>
+<li><p>Similar information as above by only for certain organization.</p></li>
+</ul></li>
+<li><p>2.4 List repository events</p>
+<ul>
+<li><p>Link: <a href="https://api.github.com/repos/%7Bowner%7D/%7Brepo%7D/events" class="uri">https://api.github.com/repos/{owner}/{repo}/events</a></p></li>
+<li><p>Example: <a href="https://api.github.com/repos/AndrewNg1891/DATA534_API_Project_Group9/events" class="uri">https://api.github.com/repos/AndrewNg1891/DATA534_API_Project_Group9/events</a></p></li>
+</ul></li>
+<li><p>2.5 List stargazers</p>
+<ul>
+<li><p>Link: <a href="https://api.github.com/repos/%7Bowner%7D/%7Brepo%7D/stargazers" class="uri">https://api.github.com/repos/{owner}/{repo}/stargazers</a></p></li>
+<li><p>Example: <a href="https://api.github.com/repos/WestHealth/pyvis/stargazers" class="uri">https://api.github.com/repos/WestHealth/pyvis/stargazers</a></p></li>
+</ul></li>
+<li><p>2.6 List repositories starred by a user</p>
+<ul>
+<li><p>Link: <a href="https://api.github.com/users/%7Busername%7D/starred" class="uri">https://api.github.com/users/{username}/starred</a></p></li>
+<li><p>Example: <a href="https://api.github.com/users/boweny0319/starred" class="uri">https://api.github.com/users/boweny0319/starred</a></p></li>
+</ul></li>
+<li><p>2.7 List watchers</p>
+<ul>
+<li><p>Link: <a href="https://api.github.com/repos/%7Bowner%7D/%7Brepo%7D/subscribers" class="uri">https://api.github.com/repos/{owner}/{repo}/subscribers</a></p></li>
+<li><p>Example: <a href="https://api.github.com/repos/AndrewNg1891/DATA534_API_Project_Group9/subscribers" class="uri">https://api.github.com/repos/AndrewNg1891/DATA534_API_Project_Group9/subscribers</a></p></li>
+</ul></li>
+<li><p>2.8 List repositories watched by a user</p>
+<ul>
+<li><p>Link: <a href="https://api.github.com/users/%7Busername%7D/subscriptions" class="uri">https://api.github.com/users/{username}/subscriptions</a></p></li>
+<li><p>Example: <a href="https://api.github.com/users/boweny0319/subscriptions" class="uri">https://api.github.com/users/boweny0319/subscriptions</a></p></li>
+</ul></li>
+</ul>
 </div>
 </div>
 
