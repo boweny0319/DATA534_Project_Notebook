@@ -1,0 +1,110 @@
+{
+	"variables": [],
+	"info": {
+		"name": "GitHub",
+		"_postman_id": "2188773f-e81e-8c93-7988-057894ac9f9b",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://api.github.com/events",
+			"request": {
+				"url": "https://api.github.com/events",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.github.com/networks/AndrewNg1891/DATA534_API_Project_Group9/events",
+			"request": {
+				"url": "https://api.github.com/networks/AndrewNg1891/DATA534_API_Project_Group9/events",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.github.com/orgs/ubco-mds-2021/events",
+			"request": {
+				"url": "https://api.github.com/orgs/ubco-mds-2021/events",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.github.com/repos/AndrewNg1891/DATA534_API_Project_Group9/events",
+			"request": {
+				"url": "https://api.github.com/repos/AndrewNg1891/DATA534_API_Project_Group9/events",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.github.com/repos/WestHealth/pyvis/stargazers",
+			"request": {
+				"url": "https://api.github.com/repos/WestHealth/pyvis/stargazers",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.github.com/users/boweny0319/starred",
+			"request": {
+				"url": "https://api.github.com/users/boweny0319/starred",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.github.com/repos/AndrewNg1891/DATA534_API_Project_Group9/subscribers",
+			"request": {
+				"url": "https://api.github.com/repos/AndrewNg1891/DATA534_API_Project_Group9/subscribers",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.github.com/users/boweny0319/subscriptions",
+			"request": {
+				"url": "https://api.github.com/users/boweny0319/subscriptions",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.github.com/users/boweny0319/subscriptions",
+			"request": {
+				"url": "https://api.github.com/users/boweny0319/subscriptions",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

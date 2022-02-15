@@ -79,3 +79,13 @@ knitr::opts_chunk$set(echo = TRUE)
       * Link: https://api.github.com/users/{username}/subscriptions
       
       * Example: https://api.github.com/users/boweny0319/subscriptions
+      
+## 2022-02-14
+
+1. Meeting with group and decide to implement events APIs first with some analysis. (Because we think this part would be more interesting and useful.)
+
+2. Try to create a simple R package for testing package installation.
+
+  + 2.1 GitHub repo name: boweny0319/testmypackage (commit e0a7e0bbea0c70f7d8941db76fba051f7972bca7)
+  
+3. Implement events API functions and test locally in "GitHub_Activity_API.ipynb".
