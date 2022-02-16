@@ -89,3 +89,27 @@ knitr::opts_chunk$set(echo = TRUE)
   + 2.1 GitHub repo name: boweny0319/testmypackage (commit e0a7e0bbea0c70f7d8941db76fba051f7972bca7)
   
 3. Implement events API functions and test locally in "GitHub_Activity_API.ipynb".
+
+## 2022-02-15
+
+1. Implement events API functions and test locally in "GitHub_Activity_API.ipynb".
+
+2. Create package structure
+
+3. Create branch in group repo and push api functions to it (commit e9bd3e03f30255299d47d9e70b3eb9a0242600d5).
+  
+  + 3.1 github_api (helper function, send requst to api and return response)
+  
+  + 3.2 format_response (helper function, format response to list/dataframe/character/raw)
+  
+    * The dataframe type output would help user to make data analysis & visualization.
+    
+    * The list type output would help user to extract certain data, it is close to the json structure.
+    
+    * The character and raw type output provide flexibility to user, so user can using text/raw data to make format according to their need.
+    
+  + 3.3 github_get_public_events, github_get_organization_events, github_get_network_events, github_get_repo_events are 4 functions to access 4 events related API. 
+  
+  + 3.4 github_lastn_events_df is a function that can help user deal with pagination problem. User can easily place the number events they want, function will handle the pagination. The function will return data in dataframe type, which could provide convience to users on analysis.
+  
+  + 3.5 github_count_events_bytype,github_count_events_bydate,github_count_events_byweekday are 3 statistic function that using the result of github_lastn_events_df. The github_count_events_byweekday have plot option.
