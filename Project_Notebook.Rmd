@@ -113,3 +113,16 @@ knitr::opts_chunk$set(echo = TRUE)
   + 3.4 github_lastn_events_df is a function that can help user deal with pagination problem. User can easily place the number events they want, function will handle the pagination. The function will return data in dataframe type, which could provide convience to users on analysis.
   
   + 3.5 github_count_events_bytype,github_count_events_bydate,github_count_events_byweekday are 3 statistic function that using the result of github_lastn_events_df. The github_count_events_byweekday have plot option.
+  
+  
+## 2022-02-16
+
+1. Rough function documentations were added in last night commit.
+
+2. Add inline comments to meet project requirement.
+
+3. Demo API functions to group members.
+
+4. Meeting with Professor Yves and group member, demo current implementation to them.
+
+5. Implemented api_rate_limit function for "Best practices for API packages" (commit 2d4dc71dc54ba21526ed69611c28a8739f6959f9)
