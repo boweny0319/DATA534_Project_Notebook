@@ -18,13 +18,13 @@ knitr::opts_chunk$set(echo = TRUE)
 
 2. Group meeting (divide project to sub-tasks).
 
-3. Create repo with teamates during the meeting.
+3. Create repo with teammates during the meeting.
 
 ## 2022-02-13
 
-1. Read GitHub Activity API Document
+1. Read GitHub Activity API Document (For choosing apis)
 
-2. Test APIs using Postman (All this API are tested for public information, results are stored in Postman) 
+2. Test APIs using Postman (All this API are tested for public information, results are stored in Postman) (Because the API document did not provide the response example, we need to know response data structure)
 
   + 2.1 List public events
       
@@ -86,7 +86,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 2. Try to create a simple R package for testing package installation.
 
-  + 2.1 GitHub repo name: boweny0319/testmypackage (commit e0a7e0bbea0c70f7d8941db76fba051f7972bca7)
+  + 2.1 GitHub repo name: boweny0319/testmypackage ([commit e0a7e0bbea0c70f7d8941db76fba051f7972bca7](https://github.com/boweny0319/testmypackage/commit/e0a7e0bbea0c70f7d8941db76fba051f7972bca7))
   
 3. Implement events API functions and test locally in "GitHub_Activity_API.ipynb".
 
@@ -96,7 +96,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 2. Create package structure
 
-3. Create branch in group repo and push api functions to it (commit e9bd3e03f30255299d47d9e70b3eb9a0242600d5).
+3. Create branch in group repo and push api functions to it ([commit e9bd3e03f30255299d47d9e70b3eb9a0242600d5](https://github.com/AndrewNg1891/DATA534_API_Project_Group9/commit/e9bd3e03f30255299d47d9e70b3eb9a0242600d5)).
   
   + 3.1 github_api (helper function, send requst to api and return response)
   
@@ -110,7 +110,7 @@ knitr::opts_chunk$set(echo = TRUE)
     
   + 3.3 github_get_public_events, github_get_organization_events, github_get_network_events, github_get_repo_events are 4 functions to access 4 events related API. 
   
-  + 3.4 github_lastn_events_df is a function that can help user deal with pagination problem. User can easily place the number events they want, function will handle the pagination. The function will return data in dataframe type, which could provide convience to users on analysis.
+  + 3.4 github_lastn_events_df is a function that can help user deal with pagination problem. User can easily place the number events they want, function will handle the pagination. The function will return data in dataframe type, which could provide convenience to users on analysis.
   
   + 3.5 github_count_events_bytype,github_count_events_bydate,github_count_events_byweekday are 3 statistic function that using the result of github_lastn_events_df. The github_count_events_byweekday have plot option.
   
@@ -119,10 +119,34 @@ knitr::opts_chunk$set(echo = TRUE)
 
 1. Rough function documentations were added in last night commit.
 
-2. Add inline comments to meet project requirement.
+2. Add inline comments to meet project requirement. ([commit 2d4dc71dc54ba21526ed69611c28a8739f6959f9](https://github.com/AndrewNg1891/DATA534_API_Project_Group9/commit/2d4dc71dc54ba21526ed69611c28a8739f6959f9))
 
-3. Demo API functions to group members.
+3. Demo API functions to group members. To provide necessary information for teammates sub-tasks. 
 
-4. Meeting with Professor Yves and group member, demo current implementation to them.
+4. Meeting with Professor Yves and group members, demo current implementation to them.
 
-5. Implemented api_rate_limit function for "Best practices for API packages" (commit 2d4dc71dc54ba21526ed69611c28a8739f6959f9)
+5. Implemented api_rate_limit function for "Best practices for API packages" ([commit 2d4dc71dc54ba21526ed69611c28a8739f6959f9](https://github.com/AndrewNg1891/DATA534_API_Project_Group9/commit/2d4dc71dc54ba21526ed69611c28a8739f6959f9)) This function can also help team members to check how much requests remaining.
+
+
+## 2022-12-18
+
+1. Setup test directory. ([commit 1cb621af595e95f416c6e0d3daeb4d5adde5c122](https://github.com/AndrewNg1891/DATA534_API_Project_Group9/commit/1cb621af595e95f416c6e0d3daeb4d5adde5c122))
+
+2. Provide technical support for project testing.
+
+3. Setup vignette directory. ([commit 5c57b7bdbb175336857c76ad1681b418c0f6c3fd](https://github.com/AndrewNg1891/DATA534_API_Project_Group9/commit/5c57b7bdbb175336857c76ad1681b418c0f6c3fd)) 
+
+4. Write vignette document "Introduction.Rmd". ([commit e7d581287c9e312ab5253c0aa06f937171246afa](https://github.com/AndrewNg1891/DATA534_API_Project_Group9/commit/e7d581287c9e312ab5253c0aa06f937171246afa)) 
+
+5. Fixed a bug that was found during vignette writing. ([commit be3b5cfb71f792645069ae3715eb410dc5d333ab](https://github.com/AndrewNg1891/DATA534_API_Project_Group9/commit/e7d581287c9e312ab5253c0aa06f937171246afa)) 
+
+6. Provide some contents for "Readme.md". ([commit 8867daa506e0e36d7655f8edd9ab341dbafcb3d8](https://github.com/AndrewNg1891/DATA534_API_Project_Group9/commit/8867daa506e0e36d7655f8edd9ab341dbafcb3d8), [commit cea7c4d4030ff4392ce7d33a71149ac6532186ea](https://github.com/AndrewNg1891/DATA534_API_Project_Group9/commit/cea7c4d4030ff4392ce7d33a71149ac6532186ea)) 
+
+## 2022-12-19
+
+1. Provide technical support for CI testing. (By zoom meeting and screen sharing)
+
+2. Refine test file and vignette document for resolve rate limit problem. ([commit d7337ef3ea2c14f85a64f629caafbfdc189c39b9](https://github.com/AndrewNg1891/DATA534_API_Project_Group9/commit/d7337ef3ea2c14f85a64f629caafbfdc189c39b9), [commit 25f2e511a0cdebd1c5d4e152e229e5447bc0cfc2](https://github.com/AndrewNg1891/DATA534_API_Project_Group9/commit/25f2e511a0cdebd1c5d4e152e229e5447bc0cfc2)) (Also provided the solution for getting GitHub Token during the CI testing)
+
+
+
