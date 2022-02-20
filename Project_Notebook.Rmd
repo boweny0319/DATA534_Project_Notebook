@@ -149,4 +149,9 @@ knitr::opts_chunk$set(echo = TRUE)
 2. Refine test file and vignette document for resolve rate limit problem. ([commit d7337ef3ea2c14f85a64f629caafbfdc189c39b9](https://github.com/AndrewNg1891/DATA534_API_Project_Group9/commit/d7337ef3ea2c14f85a64f629caafbfdc189c39b9), [commit 25f2e511a0cdebd1c5d4e152e229e5447bc0cfc2](https://github.com/AndrewNg1891/DATA534_API_Project_Group9/commit/25f2e511a0cdebd1c5d4e152e229e5447bc0cfc2)) (Also provided the solution for getting GitHub Token during the CI testing)
 
 
+## 2020-12-20
+
+1. Meeting with group members, check our project with rubric, and submit the repo links to Canvas.
+
+
 
